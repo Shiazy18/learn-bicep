@@ -1,5 +1,5 @@
 metadata descrption = 'This is used to create a web app in a resource group'
-param location string = resourceGroup().location
+param location string
 
 @description('This is to define the web app name')
 @minLength(5)
@@ -13,20 +13,18 @@ param name string = '${env}-${cost_centre}-bicep-webapp'
   'ppe'
   'prod'
 ])
-param env string = 'dev'
+param env string
 
 @description('cost center')
 @minLength(00000)
 @maxLength(99999)
-param cost_centre string = '09876'
+param cost_centre string
 
 var tags = {
   cost_centre: cost_centre
   environment: env
 }
 
-
-// param location string = resourceGroup().location
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
     name: '${name}-plan'

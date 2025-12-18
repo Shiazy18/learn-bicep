@@ -69,3 +69,12 @@ az bicep publish --file <bicep-file> --target br:<registry-name>.azurecr.io/<mod
 ## Azure Resource Manager template specs in Bicep
 
 A template spec is a resource type for storing an Azure Resource Manager template (ARM template) to deploy it later. 
+
+## to delete
+
+``` bash
+az group delete \
+  --name rg-myapp-dev \
+  --yes \
+  --no-wait
+```
