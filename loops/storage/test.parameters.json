@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "costCenter":{
+            "value": "0000"
+        },
+        "env":{
+            "value": "development"
+        },
+        "purpose": {
+            "value": "demo"
+        },
+        "location": {
+            "value": "centralus"
+        }
+    }
+
+}
