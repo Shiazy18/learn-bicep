@@ -8,11 +8,19 @@
         "env":{
             "value": "development"
         },
-        "purpose": {
+        "rg_purpose": {
             "value": "demo"
         },
-        "location": {
+        "rg_location": {
             "value": "centralus"
+        },
+        "storageConfig": {
+            "value": [
+                {
+                    "costCenter": "0000",
+                    "purpose":  "app"
+                }
+            ]
         }
     }
 
